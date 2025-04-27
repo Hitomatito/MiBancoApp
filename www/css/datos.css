@@ -1,0 +1,127 @@
+
+:root {
+  --primary-color: #17ABE3;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+  --font-family: 'Inria Sans', sans-serif;
+  --radius: 15px;
+  --max-container-width: 400px;
+  --spacing: 1rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.container {
+  width: min(90%, var(--max-container-width));
+  background-color: #fff;
+  padding: clamp(1rem, 5%, 2rem);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: auto;
+}
+
+.logo {
+  margin-bottom: clamp(1rem, 5%, 2rem);
+}
+
+.logo-img {
+  width: clamp(80px, 20%, 120px);
+  height: auto;
+}
+
+.welcome-text {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: var(--primary-color);
+  margin: clamp(1rem, 3%, 2rem) 0;
+}
+
+.small-text {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #666;
+  margin-bottom: clamp(1rem, 3%, 2rem);
+}
+
+.form-group-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  justify-content: space-between;
+  margin-bottom: clamp(1rem, 3%, 2rem);
+}
+
+.form-group-inline label {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--text-color);
+}
+
+/* Aplica mismo estilo de input a los campos inline */
+.form-group-inline input,
+.form-group-inline select {
+  width: 100%;
+  padding: clamp(0.75rem, 2.5%, 1rem);
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+}
+
+.form-group {
+  margin-bottom: clamp(1rem, 3%, 2rem);
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: clamp(0.75rem, 2.5%, 1rem);
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--primary-color);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  max-width: var(--max-container-width);
+  margin: clamp(1rem, 3%, 2rem) auto 0;
+  padding: clamp(0.75rem, 2.5%, 1rem) clamp(1.5rem, 5%, 2rem);
+  font-size: clamp(1rem, 3vw, 1.125rem);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1398c4;
+}
