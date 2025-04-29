@@ -60,4 +60,3 @@ Esta app es solo una demostración con fines educativos. **No debe usarse para g
 ## 📧 Autor
 
 - Tu Nombre -(https://github.com/Hitomatito)
-```
