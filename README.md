@@ -56,7 +56,6 @@ Este es un proyecto de aplicación bancaria simple desarrollada con **Apache Cor
 
 Esta app es solo una demostración con fines educativos. **No debe usarse para gestionar información bancaria real**.
 
----
 
 ## 📧 Autor
 
