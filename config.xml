@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.MiBanco.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MiBanco</name>
+    <name>BancoFintech</name>
     <description>Sample Apache Cordova App</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
@@ -8,4 +8,14 @@
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+
+    <!-- Configuración de íconos personalizados -->
+    <platform name="android">
+        <icon density="ldpi" src="res/mipmap-ldpi/ic_launcher.png" />
+        <icon density="mdpi" src="res/mipmap-mdpi/ic_launcher.png" />
+        <icon density="hdpi" src="res/mipmap-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="res/mipmap-xhdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="res/mipmap-xxhdpi/ic_launcher.png" />
+        <icon density="xxxhdpi" src="res/mipmap-xxxhdpi/ic_launcher.png" />
+    </platform>
 </widget>
